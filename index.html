@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapp Credibility</title>
+</head>
+
+<body>
+    <button onclick="createMetaMaskDapp()">Connect To MetaMask</button>
+
+    <div>
+        <h2>Balance : <span id="balance"></span></h2>
+        <h2>Block Number : <span id="block"></span></h2>
+        <h2>Gas Price : <span id="price"></span></h2>
+    </div>
+    <div>
+        <h2>Interactions avec le contrat Crédibilité</h2>
+        <form id="myContractForm" onsubmit="event.preventDefault(); deposit()">
+            <input id="input" type="text" placeholder="Entrez le nom du fichier..." name="hash" />
+            <input type="submit" value="Je dépose !" />
+        </form>
+    </div>
+    <div>
+        <h2>Crédibilité : <span id="cred"></span></h2>
+    </div>
+    <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript">
+
+    </script>
+    <script src="app.js" charset="utf-8" type="text/javascript">
+
+    </script>
+</body>
+
+</html>
